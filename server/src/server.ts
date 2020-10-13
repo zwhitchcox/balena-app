@@ -15,6 +15,8 @@ type Status = {
 }
 
 const player = new MPlayer()
+let status;
+player.on('status', (_status: Status) => status = _status)
 const app = express()
 const PORT = 3000
 
