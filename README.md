@@ -14,7 +14,7 @@ Add the ip address of your development device to the `.env` file, e.g.
 # .env
 REACT_APP_LIVE_IP=192.168.1.xxx
 ```
-In VS Code, you can just run the `Live` task (Ctrl+Shift+R -> Live)
+In VS Code, you can just run the `Dev` task (Ctrl+Shift+R -> Live)
 
 ---
 

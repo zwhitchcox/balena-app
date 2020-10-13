@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "watch": "npm run build -- -w",
-    "live": "cross-env balena push -g $(grep REACT_APP_LIVE_IP ../.env | cut -d '=' -f2)"
+    "live": "cross-env balena push $(grep REACT_APP_LIVE_IP ../.env | cut -d '=' -f2)"
   },
   "keywords": [],
   "author": "",
