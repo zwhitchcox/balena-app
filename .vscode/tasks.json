@@ -1,0 +1,70 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "client/",
+			"problemMatcher": [],
+			"label": "Watch Client",
+			"detail": "react-scripts start",
+			"presentation": {
+				"reveal": "never",
+        "panel": "dedicated",
+        "group": "build"
+			}
+		},
+		{
+			"type": "npm",
+			"script": "watch",
+			"path": "server/",
+			"problemMatcher": [],
+			"label": "Watch Server",
+			"detail": "",
+			"presentation": {
+				"reveal": "never",
+				"panel": "dedicated",
+        "group": "build"
+			}
+		},
+		{
+			"label": "Watch",
+			"dependsOn": [
+				"Watch Client",
+				"Watch Server"
+			],
+			"problemMatcher": []
+    },
+		{
+			"type": "npm",
+			"script": "live",
+			"path": "server/",
+			"problemMatcher": [],
+			"label": "Live",
+			"detail": "",
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated",
+			}
+		},
+    // {
+		// 	"label": "Live",
+		// 	"type": "shell",
+		// 	"command": "bash _scripts/live.sh",
+		// 	"detail": "",
+		// 	"presentation": {
+		// 		"reveal": "always",
+		// 		"panel": "dedicated"
+		// 	},
+		// 	"problemMatcher": []
+		// },
+		{
+			"label": "Dev",
+			"dependsOn": [
+				"Watch",
+				"Live"
+			],
+			"problemMatcher": []
+    }
+	]
+}
