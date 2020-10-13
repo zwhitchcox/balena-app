@@ -20,7 +20,6 @@ function App() {
           Edit  and save to reload.
         </p>
         <div className="ctrls">
-          <button onClick={action('start')}>Start</button>
           <button onClick={action('play')}>Play</button>
           <button onClick={action('pause')}>Pause</button>
         </div>
