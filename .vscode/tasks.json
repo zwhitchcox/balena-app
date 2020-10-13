@@ -3,11 +3,11 @@
 	"tasks": [
 		{
 			"type": "npm",
-			"script": "start",
+			"script": "watch",
 			"path": "client/",
 			"problemMatcher": [],
 			"label": "Watch Client",
-			"detail": "react-scripts start",
+			"detail": "cross-env cp ../.env . && react-scripts start",
 			"presentation": {
 				"reveal": "never",
         "panel": "dedicated",
